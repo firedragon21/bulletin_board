@@ -66,7 +66,7 @@ ____________________
 刪除佈告:
 requset:
 {
-  method:delete,
+  method:'delete',
   text:'',
   id:number,
 }
