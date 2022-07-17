@@ -57,7 +57,7 @@ if($action =='insert'){
     $query ->bindValue(':txt',$msg['txt']);
     
     $result =$query ->execute();
-    print_r($query->errorInfo());
+    //print_r($query->errorInfo());
     //$result = $query->fetchAll();
     if($result){
         $out['method']='success';
