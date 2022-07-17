@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="notranslate" translate="no">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="format-detection" content="telephone=no" />
+	<title>佈告欄</title>
+
+	
+	<script type="text/javascript" src="../js/bulletin_board.js"></script>
+</head>
+
+<body onload="init();">
+    標題:
+    <input id="new_title" type="text"  value="">
+    內容:
+    <input id="new_text" type="text"  value="">
+    <button id="new_one" onclick="new_one()">新增</button>
+    
+    <select id="update_opn">
+        <option>1</option>
+    </select>
+    <button id="update_one" onclick="update_one()">編輯</button>
+    <div>
+        <table id="board_table" class="table_style">
+            <thead>
+                <tr class="bg_orange word_white">
+                    <th>id</th>
+                    <th>title</th>
+                    <th>text</th>
+                    <th>day</th>
+                    <th>func</th>
+                </tr>
+            </thead>
+            <tbody id="board_table_foot">
+                <tr>
+                    <td colspan="4">無資料</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div style="display:none">
+        <xmp id='board'>
+			<tr>
+				<td nowrap>*ID* </td>
+                <td nowrap>*TITLE* </td>
+                <td nowrap>*TXT* </td>
+                <td nowrap>*DAY* </td>
+                <td nowrap>*FUC* </td>
+			</tr>
+        </xmp>
+
+    </div>
+</body>
+</html>
